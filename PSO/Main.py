@@ -11,7 +11,7 @@ def grafico(plot_data):
     plt.plot(plot_data[2], label="PSO com fator de inércia", markersize=12)
     plt.title("Comparação entre PSO")
     plt.legend()
-    plt.show()
+    plt.savefig("chart.svg")
 
 def main():
     plot_data_basico = []
