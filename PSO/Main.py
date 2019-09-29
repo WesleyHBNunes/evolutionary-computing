@@ -1,6 +1,6 @@
-from PSO.PSO_basico import pso_basico
-from PSO.PSO_constricao import pso_constricao
-from PSO.PSO_inercia import pso_inercia
+from PSO_basico import pso_basico
+from PSO_constricao import pso_constricao
+from PSO_inercia import pso_inercia
 import matplotlib.pyplot as plt
 import statistics
 
@@ -18,15 +18,15 @@ def main():
     plot_data_constricao = []
     plot_data_inercia = []
 
-    for i in range(100):
+    for i in range(10):
         result_basico = pso_basico()
         plot_data_basico.append(result_basico.fitness.values[0])
 
-    for i in range(100):
+    for i in range(10):
         result_constricao = pso_constricao()
         plot_data_constricao.append(result_constricao.fitness.values[0])
 
-    for i in range(100):
+    for i in range(10):
         result_inercia = pso_inercia()
         plot_data_inercia.append(result_inercia.fitness.values[0])
 
