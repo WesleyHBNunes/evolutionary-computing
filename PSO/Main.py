@@ -31,6 +31,7 @@ def main():
         result_inercia = pso_inercia()
         plot_data_inercia.append(result_inercia.fitness.values[0])
 
+    data = []
     data.append(plot_data_basico)
     data.append(plot_data_constricao)
     data.append(plot_data_inercia)
