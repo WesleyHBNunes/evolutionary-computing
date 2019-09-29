@@ -13,6 +13,7 @@ def grafico(plot_data):
     plt.legend()
     plt.savefig("chart.svg")
 
+
 def main():
     plot_data_basico = []
     plot_data_constricao = []
@@ -30,7 +31,6 @@ def main():
         result_inercia = pso_inercia()
         plot_data_inercia.append(result_inercia.fitness.values[0])
 
-    data = []
     data.append(plot_data_basico)
     data.append(plot_data_constricao)
     data.append(plot_data_inercia)
