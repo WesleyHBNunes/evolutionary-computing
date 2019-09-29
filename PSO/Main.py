@@ -18,15 +18,15 @@ def main():
     plot_data_constricao = []
     plot_data_inercia = []
 
-    for i in range(10):
+    for i in range(100):
         result_basico = pso_basico()
         plot_data_basico.append(result_basico.fitness.values[0])
 
-    for i in range(10):
+    for i in range(100):
         result_constricao = pso_constricao()
         plot_data_constricao.append(result_constricao.fitness.values[0])
 
-    for i in range(10):
+    for i in range(100):
         result_inercia = pso_inercia()
         plot_data_inercia.append(result_inercia.fitness.values[0])
 

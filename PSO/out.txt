@@ -1,0 +1,14 @@
+Dados PSO básico
+Media: 7.76818993532543e-06
+Mediana: 7.76818993532543e-06
+Desvio Padrão: 8.712819851750419e-06
+
+Dados PSO com fator de constrição
+Media: 7.779616805504167e-85
+Mediana: 7.779616805504167e-85
+Desvio Padrão: 9.897313493051644e-85
+
+Dados PSO com fator de inércia
+Media: 3.98654684706141e-67
+Mediana: 3.98654684706141e-67
+Desvio Padrão: 5.49950965183256e-67
