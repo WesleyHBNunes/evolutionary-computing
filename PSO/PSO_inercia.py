@@ -13,7 +13,6 @@ creator.create("Particle", list, fitness=creator.FitnessMin, speed=list,
                smin=None, smax=None, best=None)
 
 
-
 def generate(size, pmin, pmax, smin, smax):
     part = creator.Particle(random.uniform(pmin, pmax) for _ in range(size))
     part.speed = [random.uniform(smin, smax) for _ in range(size)]
@@ -23,10 +22,10 @@ def generate(size, pmin, pmax, smin, smax):
 
 
 def matyas_function(x):
-    return 0.26*((x[0]**2) + (x[1]**2)) - .48*x[0]*x[1],
+    return 0.26 * ((x[0] ** 2) + (x[1] ** 2)) - .48 * x[0] * x[1],
 
 
-def updateParticle(part, best,fator_de_inercia, phi1, phi2):
+def updateParticle(part, best, fator_de_inercia, phi1, phi2):
     u1 = (random.uniform(0, phi1) for _ in range(len(part)))
     u2 = (random.uniform(0, phi2) for _ in range(len(part)))
     v_u1 = map(operator.mul, u1, map(operator.sub, part.best, part))

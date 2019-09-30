@@ -1,6 +1,6 @@
-from PSO_basico import pso_basico
-from PSO_constricao import pso_constricao
-from PSO_inercia import pso_inercia
+from PSO_basico import *
+from PSO_constricao import *
+from PSO_inercia import *
 import matplotlib.pyplot as plt
 import statistics
 
@@ -31,10 +31,7 @@ def main():
         result_inercia = pso_inercia()
         plot_data_inercia.append(result_inercia.fitness.values[0])
 
-    data = []
-    data.append(plot_data_basico)
-    data.append(plot_data_constricao)
-    data.append(plot_data_inercia)
+    data = [plot_data_basico, plot_data_constricao, plot_data_inercia]
 
     print("Dados PSO básico")
     print("Media: " + str(statistics.mean(plot_data_basico)))

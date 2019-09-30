@@ -22,7 +22,7 @@ def generate(size, pmin, pmax, smin, smax):
 
 
 def matyas_function(x):
-    return 0.26*((x[0]**2) + (x[1]**2)) - .48*x[0]*x[1],
+    return 0.26 * ((x[0] ** 2) + (x[1] ** 2)) - .48 * x[0] * x[1],
 
 
 def updateParticle(part, best, phi1, phi2):
@@ -38,7 +38,7 @@ def updateParticle(part, best, phi1, phi2):
         elif abs(speed) > part.smax:
             part.speed[i] = math.copysign(part.smax, speed)
     part[:] = list(map(operator.add, part, part.speed))
-    part[:] = map(lambda particula: particula*fator_de_constricao, part)
+    part[:] = map(lambda particula: particula * fator_de_constricao, part)
 
 
 toolbox = base.Toolbox()
