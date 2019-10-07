@@ -1,0 +1,4 @@
+Dados ED básico
+Media: 5.190163381491258e-14
+Mediana: 4.6167482078622225e-14
+Desvio Padrão: 3.472718708238774e-14
