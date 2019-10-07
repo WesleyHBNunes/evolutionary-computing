@@ -24,26 +24,24 @@ def main():
     print('======= BÁSICO ===========')
     for i in range(100):
         plot_basico.append(ed_basico_aprend(1))
-        if i % 10 == 0:
-            print(i)
+
+    print()
 
     print('======== RAND ===========')
     for i in range(100):
         plot_rand.append(ed_rand())
-        if i % 10 == 0:
-            print(i)
+
+    print()
 
     print('========= BEST ========')
     for i in range(100):
         plot_basico_aprend.append(ed_basico_aprend(0.7))
-        if i % 10 == 0:
-            print(i)
+
+    print()
 
     print('=========== APREND ============')
     for i in range(100):
         plot_best.append(ed_best())
-        if i % 10 == 0:
-            print(i)
 
     data = [plot_basico, plot_rand, plot_basico_aprend, plot_best]
 
