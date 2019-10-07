@@ -13,7 +13,7 @@ def grafico(plot_data):
 
 def main():
     result = []
-    for i in range(10):
+    for i in range(100):
         result.append(clonalg())
 
     data = [result]
