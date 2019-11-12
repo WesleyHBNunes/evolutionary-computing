@@ -13,7 +13,7 @@ def grafico(plot_data):
 def main():
     plot = []
 
-    for i in range(5):
+    for i in range(100):
         result = TLBO.tlbo()
         plot.append(result)
 
